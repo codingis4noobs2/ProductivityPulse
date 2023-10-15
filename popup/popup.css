@@ -1,0 +1,92 @@
+body {
+  height: 400px;
+  width: 350px;
+  background-color: #444;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #ff6347;
+  margin-bottom: 20px;
+}
+
+.header img {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+h1#time {
+  text-align: center;
+  font-size: 48px;
+  margin: 10px 0;
+  color: #ff6347;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#timer-section {
+  background-color: #fff;
+  color: #ff6347;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: space-around;  /* changed from space-evenly for better spacing */
+  margin-top: 20px;
+}
+
+.timer-btn {
+  color: #fff;
+  background-color: #ff6347;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 45%;  /* added this to give the buttons a more uniform width */
+}
+
+.timer-btn:hover {
+  background-color: #e55343;
+}
+
+#task-section {
+  text-align: center;
+}
+
+#add-task-btn {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;  /* added space below the button */
+}
+
+#add-task-btn:hover {
+  background-color: #e55343;
+}
+
+#task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center the tasks */
+  gap: 10px;  /* create a gap between tasks */
+}
