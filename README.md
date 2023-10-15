@@ -17,4 +17,4 @@ Select the extracted folder and the extension will be added to Chrome.
 # Usage
 Click on the Pomodoro Timer icon on your Chrome toolbar.
 
-## Start the timer and get to work!
+### Start the timer and get to work!
