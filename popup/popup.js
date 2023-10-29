@@ -80,10 +80,16 @@ function renderTask(taskNum) {
 }
 
 function addTask() {
-    const taskNum = tasks.length
-    tasks.push("")
-    renderTask(taskNum)
-    saveTasks()
+    const taskInput = document.getElementById("task-input");
+    const taskText = taskInput.value.trim();
+
+    if (taskText !== "") {
+        const taskNum = tasks.length;
+        tasks.push(taskText);
+        renderTask(taskNum);
+        saveTasks();
+        taskInput.value = "";
+    }
 }
 
 function deleteTask(taskNum) {
